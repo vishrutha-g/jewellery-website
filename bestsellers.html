@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AURELIA | Bestsellers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            padding-top: 60px; 
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+header {
+    background-color: #FFFFFF;
+    color: #f0eeee;
+    padding:  20px  30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+header .nav-container {
+    flex: 1;
+}
+
+header h1 {
+    margin: 0;
+    color: #0a090a;
+    text-align: center;
+    flex: 2; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; 
+    gap: 20px;
+    background-color: transparent;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color:rgb(212, 180, 212;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px ;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #555;
+        }
+        .add-to-cart {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #b5919d;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #a6959b;
+        }
+
+        .hero {
+            background-image: url('https://www.wildchildjewels.com/cdn/shop/files/2E6E0902-3349-4112-BB8F-BE2643A135E1.jpg?v=1718398749&width=2160');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 70vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-text {
+            font-size: 45px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            color: white; 
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AURELIA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bestsellers.html">Best Sellers</a></li>
+                <li><a href="collection.html">Our Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">Best Sellers</div>
+        </section>
+    
+        <div class="product-grid">
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/A8FA2787-B8E0-496C-BD09-484761CCC5F7.jpg?v=1718449757&width=480" alt="Product Image 1">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/6F185236-C1C1-4E10-B0BC-81B9222F1110.jpg?v=1718449756&width=2160" alt="Product Hover Image 1">
+                </div>
+                <p class="product-name">Pearl Earrings</p>
+                <p class="product-price">Rs. 1,899.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/11_11_1_jpg.heic?v=1710251959&width=480" alt="Product Image 2">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/6C06FD98-15FB-477A-BDB0-F3A5C47D723E_6e0e8c42-79cb-46be-b68b-6ee3058dd289.jpg?v=1710254768&width=2160" alt="Product Hover Image 2">
+                </div>
+                <p class="product-name">11 Necklace</p>
+                <p class="product-price">Rs. 1,899.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/Icedmini1.jpg?v=1710247011&width=2160" alt="Product Image 3">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/Alaia3.jpg?v=1710249303&width=2160" alt="Product Hover Image 3">
+                </div>
+                <p class="product-name">Iced Teddy</p>
+                <p class="product-price">Rs. 1,849.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/2E6E0902-3349-4112-BB8F-BE2643A135E1.jpg?v=1718398749&width=2160" alt="Product Image 4">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/91ADE4F0-5612-4B92-BAA4-BC0588B8BEB1.png?v=1718449853&width=2160" alt="Product Hover Image 4">
+                </div>
+                <p class="product-name">Sea Shell Necklace</p>
+                <p class="product-price">Rs. 2,583.00 </p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/EAE4EBFF-63AE-4F88-A327-D500221D93D2.jpg?v=1718398626&width=2160" alt="Product Image 5">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/IMG-1188.png?v=1718398626&width=2160" alt="Product Hover Image 5">
+                </div>
+                <p class="product-name">Star Fish Earrings</p>
+                <p class="product-price">Rs. 2,583.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/D440BA9C-D139-4DDD-AAD6-28CAD9F914D8.jpg?v=1715291816&width=480" alt="Product Image 6">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/D440BA9C-D139-4DDD-AAD6-28CAD9F914D8.jpg?v=1715291816&width=2160" alt="Product Hover Image 6">
+                </div>
+                <p class="product-name">Bow Earrings</p>
+                <p class="product-price">Rs. 583.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/Pinkyheart2_jpg.heic?v=1711087386&width=2160" alt="Product Image 7">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/32BC48BE-2EBF-4E96-9216-64E55A502DA8.png?v=1722017866&width=2160" alt="Product Hover Image 7">
+                </div>
+                <p class="product-name">Heart Earrings</p>
+                <p class="product-price">Rs. 1,583.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/Heartofgoldnecklace2.jpg?v=1710253035&width=2160" alt="Product Image 8">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/9D9F28C5-AD33-4032-98B5-6926F492DBBD.png?v=1722019328&width=2160" alt="Product Hover Image 8">
+                </div>
+                <p class="product-name">Heart Necklace</p>
+                <p class="product-price">Rs. 2,583.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/Pearlinagoldhoops1.png?v=1710252762&width=480" alt="Product Image 9">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/Pearlinagoldhoops2_png.heic?v=1710252762&width=2160" alt="Product Hover Image 9">
+                </div>
+                <p class="product-name">Gold Hoops</p>
+                <p class="product-price">Rs. 1,283.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+    
+            <div class="product">
+                <div class="image-container">
+                    <img class="default-img" src="https://www.wildchildjewels.com/cdn/shop/files/Keytomyheart2.jpg?v=1710247324&width=2160" alt="Product Image 10">
+                    <img class="hover-img" src="https://www.wildchildjewels.com/cdn/shop/files/Keytomyheart1.jpg?v=1710247324&width=2160"  alt="Product Hover Image 10">
+                </div>
+                <p class="product-name">Heart Chain</p>
+                <p class="product-price">Rs. 2,583.00</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 AURELIA. All rights reserved.</p>
+        <p>Follow us on <a href="#">Social Media</a></p>
+    </footer>
+    
